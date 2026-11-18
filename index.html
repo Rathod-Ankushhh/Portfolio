@@ -1,287 +1,425 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Rathod Ankush — Frontend Developer Portfolio">
-  <title>Rathod Ankush</title>
-  <link rel="icon" type="image/png" href="logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Ankush Rathod — Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="cursor-glow"></div>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-  <div class="ambient ambient-three"></div>
-<!-- header, navbar  -->
-  <header class="navbar">
-    <a href="#home" class="brand">
-      <span class="brand-mark">RA</span>
-      <span class="brand-name">Rathod <b>Ankush</b></span>
-    </a>
-    <button class="menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
-    <nav class="nav-links">
-      <a class="active" href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cta" href="#contact">Let's Connect <span>→</span></a>
+    <!-- --- NAVIGATION BAR --- -->
+    <nav id="nav">
+        <a href="#" class="lg" data-p="0">Rathod<b> Ankush</b></a>
+        <div class="nl">
+            <button type="button" data-p="0" data-sp="-1">Home</button>
+            <button type="button" data-p=".59" data-sp="0">About</button>
+            <button type="button" data-p=".59" data-sp="0">Skills</button>
+            <button type="button" data-p=".71" data-sp="1">Projects</button>
+            <button type="button" data-p=".71" data-sp="1">Education</button>
+            <button type="button" data-p=".83" data-sp="2">Experience</button>
+            <button type="button" data-p=".83" data-sp="2">Certificates</button>
+            <button type="button" data-p=".98" data-sp="3">Contact</button>
+        </div>
     </nav>
-  </header>
-<!-- hero section -->
-  <main>
-    <section id="home" class="hero section-pad">
-      <div class="hero-copy reveal">
-        <div class="eyebrow">👋 Hello, I'm</div>
+
+    <!-- --- INTRO / HERO SECTION --- -->
+    <div id="intro">
+        <div class="m k" style="font-size:14px;margin-bottom:12px">● Open to  Work · Hyderabad, India</div>
         <h1>Rathod Ankush</h1>
-        <div class="role"><span>Full Stack Developer</span><i></i></div>
-        <p class="hero-text">I build fast, responsive and beautiful web experiences with clean code and modern technologies.</p>
-        <div class="traits">
-          <span>▣ Creative</span><span>⚡ Problem Solver</span><span>🎯 Detail Oriented</span>
+        <p class="m" style="color:var(--mut);margin:12px 0 0"><p class="m" style="color:var(--mut);margin:12px 0 0">· Full Stack Developer · Python Developer · Building modern web applications</p>
+        </p>· scroll to watch me build</p>
+        <div style="margin-top:14px">
+            <button type="button" class="btn" data-p=".71" style="pointer-events:auto">See my work</button>
+            <button type="button" class="btn g" data-p=".98" style="pointer-events:auto">Contact me</button>
         </div>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">🚀 View My Work</a>
-          <a class="btn secondary" href="Ankush.Resume.pdf" id="resumeBtn" download="Rathod_Ankush_Resume.pdf">▣ Download Resume ↧</a>
-        </div>
-        <div class="social-row">
-          <span>Connect with me</span>
-          <a href="https://github.com/Rathod-Ankushhh" target="_blank">◉</a>
-          <a href="https://www.linkedin.com/in/rathod-ankush-8506a431b/" target="_blank">in</a>
-          <a href="mailto:rathodankushhhhh@gmail.com">✉</a>
-          
-        </div>
-      </div>
+    </div>
 
-      <div class="hero-visual reveal">
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="portrait-card">
-          <div class="portrait-placeholder">
-            <img src="profile.jpg" alt="Rathod Ankush profile photo" class="profile-img">
-          </div>
-        </div>
-        <div class="float-card code">&lt;/&gt;</div>
-        <div class="float-card js">JS</div>
-        <div class="float-card react">⚛</div>
-        <div class="float-card css">◆</div>
-        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
-      </div>
-      <div class="hero-wave"></div>
-    </section>
-<!-- About me  -->
-    <section id="about" class="section-pad">
-      <div class="about-card glass reveal">
-        <div class="about-copy">
-          <span class="section-kicker">ABOUT ME</span>
-          <h2>I turn <em>ideas</em> into<br>real digital <em>experiences.</em></h2>
-          <p>I’m a Computer Science graduate from Aurora’s Scientific and Technological Institute, Hyderabad, passionate about Full Stack Development and modern web technologies. I enjoy building responsive, interactive, and user-friendly web applications while continuously learning and improving my skills.
-</p>
-          <p>Currently open to opportunities in Full Stack Development, Frontend Development, and Software Engineering, where I can contribute my skills, grow professionally, and work on meaningful projects.</p>
-          <ul class="check-list">
-            <li>Full Stack Development</li><li>Frontend Development</li><li>Responsive Web Design</li><li>Clean & Maintainable Code</li>
-          </ul>
-          <div class="signature">Ankush</div>
-        </div>
-        <div class="about-illustration">
-          <div class="character">🧑‍💻</div>
-          <div class="stat-bar">
-            <div><strong>3+</strong><span>Projects</span></div>
-            <div><strong>1</strong><span>Internship</span></div>
-            <div><strong>2+</strong><span>Years Learning</span></div>
-          </div>
-        </div>
-        <div class="quick-info">
-          <h3>♟ Quick Info</h3>
-          <div class="info-row"><span>●</span><strong>Name</strong><span>Rathod Ankush</span></div>
-          <div class="info-row"><span>◆</span><strong>Degree</strong><span>B.Tech</span></div>
-          <div class="info-row"><span>🎓</span><strong>Stream</strong><span>Computer Science & Engineering</span></div>
-          <div class="info-row"><span>🎓</span><strong>Graduation</strong><span>2023 – 2026</span></div>
-          <div class="info-row"><span>▣</span><strong>Institute</strong><span>Aurora's Scientific and Technological Institute</span></div>
-          <div class="info-row"><span>📍</span><strong>Location</strong><span>Hyderabad, India</span></div>
-          
-          <a class="mini-btn" href="#contact">Let's Talk →</a>
-        </div>
-      </div>
-    </section>
-<!-- Skills -->
-    <section id="skills" class="section-pad compact">
-      <div class="section-title"><h2>Technologies I <em>Work With</em></h2></div>
-      <div class="skills-grid">
-        <div class="skill-card html"><div class="skill-icon">◇</div><strong>HTML5</strong><span></span></div>
-        <div class="skill-card css"><div class="skill-icon">✦</div><strong>CSS3</strong><span></span></div>
-        <div class="skill-card js"><div class="skill-icon">JS</div><strong>JavaScript</strong><span></span></div>
-        <div class="skill-card python"><div class="skill-icon">Py</div><strong>Python</strong><span></span></div>
-        <div class="skill-card react"><div class="skill-icon">⚛</div><strong>React</strong><span></span></div>
-        <div class="skill-card bootstrap"><div class="skill-icon">B</div><strong>Bootstrap</strong><span></span></div>
-        <div class="skill-card git"><div class="skill-icon">◆</div><strong>Git</strong><span></span></div>
-        <div class="skill-card github"><div class="skill-icon">◉</div><strong>GitHub</strong><span></span></div>
-        <div class="skill-card sql"><div class="skill-icon">SQL</div><strong>SQL</strong><span></span></div>
-        <div class="skill-card figma"><div class="skill-icon">◆</div><strong>Figma</strong><span></span></div>
-      </div>
-    </section>
-<!-- Intership  -->
-    <section id="experience" class="section-pad">
-      <div class="experience-projects">
-        <div class="experience-card glass reveal">
-          <div class="section-title left"><span>EXPERIENCE</span><h2>My Internship <em>Journey</em></h2></div>
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div>
-              <h3>Frontend Developer Intern</h3><b>Axcentra</b><span class="date">Feb 2026 – Apr 2026</span>
-              <ul>
-                <li>Developed responsive web pages and UI components using HTML, CSS and JavaScript.</li>
-                <li>Collaborated with the team to build user-friendly interfaces.</li>
-                <li>Optimized web performance and improved page responsiveness.</li>
-                <li>Used Git and GitHub for version control and code collaboration.</li>
-              </ul>
+    <!-- --- MAIN 3D ---   -->
+    <div id="stage">
+        <!-- ---  LAPTOP --- -->
+        <div id="lap">
+            <!-- Laptop keyboard and trackpad base -->
+            <div class="base">
+                <div class="kb"></div>
+                <div class="tp"></div>
             </div>
-          </div>
-          <div class="coming">More Experience Coming Soon... 🚀</div>
-        </div>
-<!-- Projects -->
-        <div id="projects" class="projects-card glass reveal">
-          <div class="section-head">
-            <div class="section-title left"><span>MY WORKS</span><h2>Things I've <em>Built</em></h2></div>
-            <a href="#projects">View All →</a>
-          </div>
-          <div class="project-grid" id="projectGrid">
-            <article class="project-card">
-              <div class="project-image"><span class="project-art">📊</span></div>
-              <div class="project-body"><h3>Software Defect Prediction</h3><p>ML-based web application that predicts software defects using intelligent ensemble learning models.</p><div class="tags"><span>Python</span><span>Flask</span><span>ML</span></div><div class="project-links"><a href="https://github.com/Rathod-Ankushhh/Software-Defect-Prediction-Using-Intelligent-Ensemble-Model" target="_blank">◉ Code</a></div></div>
-            </article>
-            <article class="project-card">
-              <div class="project-image"><span class="project-art">💻</span></div>
-              <div class="project-body"><h3>Personal Portfolio</h3><p>A responsive personal portfolio focused on modern UI, animations, accessibility and performance.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://rathod-ankushhh.github.io/Portfolio/">↗ Live Demo</a></div></div>
-            </article>
-          </div>
-          <button class="view-more-btn" type="button" data-target="projectGrid" aria-expanded="false">View More Projects <span>↓</span></button>
-        </div>
-      </div>
-    </section>
-
-    <section class="values section-pad compact">
-      <div class="value-card"><span>🧠</span><strong>Always Learning</strong><small>New Technologies</small></div>
-      <div class="value-card"><span>&lt;/&gt;</span><strong>Code Everyday</strong><small>Improve Everyday</small></div>
-      <div class="value-card"><span>♥</span><strong>Passionate About</strong><small>Building & Design</small></div>
-      <div class="value-card"><span>🎯</span><strong>Goal-Oriented</strong><small>Always Improving</small></div>
-    </section>
-<!-- Certifications  -->
-    <section id="certifications" class="section-pad">
-      <div class="section-title">
-        
-        <h2>My <em>Certifications</em></h2>
-      </div>
-      <div class="cert-grid" id="certGrid">
-        <article class="cert-card glass reveal">
-          <img class="cert-thumb" src="https://placehold.co/300x220/e9f0ff/5364df?text=Certificate-1" alt="Certification thumbnail">
-          <div class="cert-content">
-            <h3>Full Stack Web Development</h3>
-            <p>GeeksforGeeks</p>
-            <small>2025</small>
-          </div>
-          <a class="cert-link" href="Full Stack Web Development.png" target="_blank" rel="noopener">View Certificate ↗</a>
-        </article>
-
-        <article class="cert-card glass reveal">
-          <img class="cert-thumb" src="https://placehold.co/300x220/f6e6ff/5364df?text=Certificate-2" alt="Certification thumbnail">
-          <div class="cert-content">
-            <h3>Responsive Web Design</h3>
-            <p>FreeCodeCamp</p>
-            <small>2025</small>
-          </div>
-          <a class="cert-link" href="Responsive_Web Design.png" target="_blank" rel="noopener">View Certificate ↗</a>
-        </article>
-
-        <article class="cert-card glass reveal">
-          <img class="cert-thumb" src="https://placehold.co/300x220/dce9ff/5364df?text=Certificate-3" alt="Certification thumbnail">
-          <div class="cert-content">
-            <h3>Python Programming</h3>
-            <p>GeeksforGeeks</p>
-            <small>2025</small>
-          </div>
-          <a class="cert-link" href="Basic_Python.png" target="_blank" rel="noopener">View Certificate ↗</a>
-        </article>
-      </div>
-      <button class="view-more-btn" type="button" data-target="certGrid" aria-expanded="false">View More Certifications <span>↓</span></button>
-    </section>
-<!-- Education -->
-    <section id="education" class="section-pad">
-      <div class="bottom-grid">
-        <div class="education-card glass">
-          <div class="section-title left"><span>EDUCATION</span></div>
-          <div class="education-list">
-            <div class="edu-item"><div class="edu-dot"></div><div><h3>B.Tech in Computer Science and Engineering</h3><p>Aurora’s Scientific & Technological Institute, Hyderabad</p><span>2023 – 2026</span></div></div>
-            <div class="edu-item"><div class="edu-dot"></div><div><h3>Diploma in Mechanical Engineering</h3><p>TKR College Of Engineering & Technology, Hyderabad</p><span>2019 – 2023</span></div></div>
-            <div class="edu-item"><div class="edu-dot"></div><div><h3>Secondary School Certificate</h3><p>Zilla Parishad High School, Narayankhed</p><span>2018 – 2019</span></div></div>
-          </div>
-        </div>
- <!-- Contact -->
-        <div id="contact" class="contact-card glass">
-          <div class="contact-heading">
-            <div class="section-title left">
-              <span>LET'S CONNECT</span>
-              <h2>Let's Build Something <em>Amazing</em> Together! 🚀</h2>
+            <!-- Laptop screen lid -->
+            <div class="lid">
+                <div class="lb">&lt;/&gt;</div>
+                <!-- Laptop screen content -->
+                <div class="scr">
+                    <div class="ui">
+                        <!-- Editor window tabs -->
+                        <div class="tb">
+                            <i></i>
+                            <i></i>
+                            <i></i>
+                            <span class="tab" id="t0">index.html</span>
+                            <span class="tab" id="t1">style.css</span>
+                            <span class="tab" id="t2">app.js</span>
+                            <span class="tab" id="t3">views.py</span>
+                        </div>
+                        <!-- Code editor and browser preview -->
+                        <div class="bdy">
+                            <!-- JavaScript-generated code editor -->
+                            <div class="ed" id="ed">
+                            </div>
+                            <!-- Browser preview panel -->
+                            <div class="bw">
+                                <!-- Browser address and status bar -->
+                                <div class="ab">
+                                    <span id="url">localhost:8000</span>
+                                    <em id="bd">200 OK · Django</em>
+                                </div>
+                                <!-- Live website preview -->
+                                <div class="pv" id="pv">
+                                    <header data-t=".1">
+                                        <h1 data-t=".15">Ankush Rathod</h1>
+                                        <p data-t=".3">Full Stack,Frontend &amp; Python developer</p>
+                                    </header>
+                                    <!-- Sample event listing -->
+                                    <section data-t=".45">
+                                        <h2 data-t=".5">Upcoming events</h2>
+                                        <div class="cd" data-t=".62">Tech Meetup</div>
+                                        <div class="cd" data-t=".74">Design Workshop</div>
+                                        <div class="cd" id="e5" style="display:none">Hackathon · from database</div>
+                                        <button id="reg" data-t=".88">Register</button>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Laptop screen status area -->
+                        <div class="stp" id="stp">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>Have a project, job opportunity, or just want to say hello? Send me a message and I'll get back to you.</p>
-          </div>
+        </div>
 
-          <form
-            class="contact-form"
-            action="https://formspree.io/f/xdenzvng"
-            method="POST"
-            id="contactForm"
-          >
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input id="name" name="name" type="text" placeholder="Enter your name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input id="email" name="email" type="email" placeholder="Enter your email" required>
-              </div>
+        <!-- --- 3D PORTFOLIO BOOK --- -->
+        <div id="book">
+            <!-- Book cover and page structure -->
+            <div class="bb"></div>
+            <!-- --- ABOUT SECTION --- -->
+            <div class="lf" id="L0">
+                <!-- Front cover -->
+                <div class="fr cov">
+                    <div class="m" style="font-size:.9em;opacity:.8">&lt;/&gt;</div>
+                    <h1 style="font-size:2.3em;line-height:1.05;margin:.4em 0">Rathod<br>Ankush</h1>
+                    <div class="m" style="font-size:.9em">Developer Portfolio</div>
+                    <div class="m" style="font-size:.8em;opacity:.8;margin-top:1.6em">Hyderabad, India</div>
+                </div>
+                <!-- Personal introduction and profile  -->
+                <div class="bk pg">
+                    <div class="tag">01 / about</div>
+                    <h2>From machines to code.</h2>
+                    <p>I started in Mechanical Engineering and moved into software, where I enjoy building things people can click and use.</p>
+                    <p>Now I focus on full-stack development, building responsive frontends and Python/Django web applications. I love turning ideas into practical applications, exploring new technologies, and solving real-world problems through code.</p>
+                    <!-- Personal information -->
+                    <div class="facts">
+                        <div>
+                            <small>location</small>
+                            <b>Hyderabad, India</b>
+                        </div>
+                        <div>
+                            <small>degree</small>
+                            <b>B.Tech CSE · 2026</b>
+                        </div>
+                        <div>
+                            <small>focus</small>
+                            <b>· Full Stack Development <br>· Frontend Development <br>· Python <br>· Django <br>· Responsive Web Design</b>
+                        </div>
+                        <div>
+                            <small>status</small>
+                            <b>Open to work</b>
+                        </div>
+                    </div>
+                    <a href="images/resume.pdf" download="Ankush_Rathod_Resume.pdf" class="btn">Download Resume ↓</a>
+                </div>
             </div>
 
-            <div class="form-group">
-              <label for="subject">Subject</label>
-              <input id="subject" name="subject" type="text" placeholder="What would you like to discuss?" required>
+
+            <!-- --- SKILLS AND PROJECTS --- -->
+            <div class="lf" id="L1">
+                <!-- Technical skills -->
+                <div class="fr pg">
+                    <div class="tag">02 / skills</div>
+                    <h2>Tools I work with.</h2>
+                    <!-- Frontend skills -->
+                    <div class="tag" style="color:var(--mut)">frontend</div>
+                    <span class="chip">HTML5</span>
+                    <span class="chip">CSS3</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">Bootstrap 5</span>
+
+                    <!-- Backend skills -->
+                    <div class="tag" style="color:var(--mut)">backend</div>
+                    <span class="chip">Python</span>
+                    <span class="chip">Django</span>
+                    <span class="chip">SQLite</span>
+
+                    <!-- Additional practical skills -->
+                    <div class="tag" style="color:var(--mut)">practice</div>
+                    <span class="chip">Responsive design</span>
+                    <span class="chip">Django Admin</span>
+
+                    <!-- Skills currently being learned -->
+                    <div class="tag" style="color:var(--mut)">currently learning</div>
+                    <span class="chip">Django REST Framework</span>
+                    <span class="chip">Advanced JavaScript</span>
+                    <span class="chip">REST APIs</span>
+                    <span class="chip">React.js</span>
+                </div>
+
+
+                <!-- Featured projects -->
+                <div class="bk pg">
+                    <div class="tag">03 / projects</div>
+
+                    <!-- Project 1: EventForms -->
+                    <b>1. EventForms</b>
+                    <p>A full-stack event management and registration web application built with Python, Django, and Bootstrap 5. Users can explore upcoming events and register online, while administrators can manage events and registrations through the Django admin panel.</p>
+
+                    <!-- EventForms technology stack -->
+
+                    <span class="chip">Python</span>
+                    <span class="chip">HTML5</span>
+                    <span class="chip">CSS3</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">Django</span>
+                    <span class="chip">SQLite</span>
+                    <span class="chip">Bootstrap5</span>
+
+                    <!-- EventForms project links -->
+                    <div>
+                        <a href="https://eventforms.onrender.com/" target="_blank" class="btn">Live demo →</a>
+                        <a href="https://github.com/Rathod-Ankushhh/EventForms" target="_blank" class="btn g" style="display:inline-flex">Source</a>
+                    </div>
+
+                    <!-- Project 2: Software Defect Prediction -->
+                    <div class="pj">
+                        <b>2. Software Defect Prediction</b>
+                        <span>An intelligent machine learning-based system designed to predict software defects using an ensemble of classification algorithms. The project combines data preprocessing, feature optimization, and ensemble learning techniques to improve software defect prediction.</span>
+                        <br>
+
+                        <!-- Software Defect Prediction technology stack -->
+                        <span class="chip">Python</span>
+                        <span class="chip">Flask</span>
+                        <span class="chip">Machine Learning</span>
+                        <span class="chip">Scikit-learn</span>
+                        <span class="chip">SQLite</span>
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS3</span>
+                        <span class="chip">JavaScript</span>
+                        <br>
+                        <!--Software Defect Prediction project links -->
+                        <a href="https://github.com/Rathod-Ankushhh/Software-Defect-Prediction-Using-Intelligent-Ensemble-Model" target="_blank" class="btn g" style="display:inline-flex">Source</a>
+                    </div>
+                    
+                </div>
             </div>
 
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <!-- --- EDUCATION AND EXPERIENCE --- -->
+            <div class="lf" id="L2">
+                    <!-- Educational background -->
+                    <div class="fr pg">
+                        <div class="tag">04 / education</div>
+                        <h2>Where I studied.</h2>
+                        <div class="tlr">
+                            <small>2023 — 2026</small>
+                            <b>B.Tech, Computer Science &amp; Engineering</b>
+                            <span>Aurora’s Scientific and Technological Institute</span>
+                             <p style="font-size: 10px";>Focused on software development, programming, databases, and web technologies.</p>
+                        </div>
+                        <div class="tlr">
+                            <small>2019 — 2023</small>
+                            <b>Diploma, Mechanical Engineering</b>
+                            <span>TKR College of Engineering &amp; Technology</span>
+                            <p style="font-size: 10px;">Developed a foundation in engineering principles, technical problem-solving, and analytical thinking.</p>
+
+                        </div>
+                    </div>
+                <!-- Professional experience -->
+                <div class="bk pg">
+                    <div class="tag">05 / experience</div>
+                    <h2>Where I’ve worked.</h2>
+                    <div class="tlr">
+                        <small>Feb 2026 – Apr 2026</small>
+                        <b>Frontend Developer Intern [Axcentra]</b>
+                        <span>Developed responsive web pages and UI components using HTML, CSS, and JavaScript.
+                              Collaborated with the team to build user-friendly interfaces, optimized web performance,
+                              improved page responsiveness, and used Git and GitHub for version control and code collaboration.</span>
+                        <a href="images/Intership_cer.png" target="_blank" rel="noopener noreferrer" class="btn certificate-btn"><i class="fa-solid fa-award"></i>View Certificate ↗</a>
+                    </div>
+                </div>
             </div>
 
-            <input type="hidden" name="_subject" value="New Portfolio Contact — Rathod Ankush">
-            <input type="hidden" name="_next" value="https://rathod-ankushhh.github.io/Portfolio/">
 
-            <button class="submit-btn" type="submit">
-              Send Message <span>➤</span>
-            </button>
-          </form>
+            <!-- ==================== CERTIFICATES AND CONTACT ==================== -->
+            <div class="lf" id="L3">
 
-          <div class="contact-actions">
-            <a href="mailto:rathodankushhhhh@gmail.com">✉ Email</a>
-            <a href="https://www.linkedin.com/in/rathod-ankush-8506a431b/" target="_blank" rel="noopener">in LinkedIn</a>
-            <a href="https://github.com/Rathod-Ankushhh" target="_blank" rel="noopener">◉ GitHub</a>
-            <a href="Ankush.Resume.pdf">▣ Resume</a>
-          </div>
+                <!-- Certificates and achievements -->
+                <div class="fr pg">
+                    <div class="tag">06 / certificates</div>
+                    <h2>What I’ve earned.</h2>
+
+                    <div class="cert">
+                        <i>✓</i>
+                        <div>
+                            <b>Full Stack Web Development</b>
+                            <span>GeeksforGeeks · [2025]</span>
+                            <a href="images/Full Stack_cer.png" target="_blank" rel="noopener noreferrer" class="btn certificate-btn"> <i class="fa-solid fa-award"></i>View Certificate ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="cert">
+                        <i>✓</i>
+                        <div>
+                            <b>Responsive Web Design</b>
+                            <span>FreeCodeCamp · [2025]</span><br>
+                            <a href="images/Responsive Web Design_cer.png" target="_blank" rel="noopener noreferrer" class="btn certificate-btn"> <i class="fa-solid fa-award"></i>View Certificate ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="cert">
+                        <i>✓</i>
+                        <div>
+                            <b>Python Programming</b>
+                            <span>GeeksforGeeks · [2025]</span>
+                            <a href="images/python_cer.png" target="_blank" rel="noopener noreferrer" class="btn certificate-btn"> <i class="fa-solid fa-award"></i>View Certificate ↗</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact information and message form -->
+
+                <div class="bk pg">
+                    <div class="tag">07 / contact</div>
+                    <h2>Let’s build something.</h2>
+
+                    <!-- Contact links -->
+                    <a class="cl" href="mailto:rathodankushhhhh@gmail.com">
+                        rathodankushhhhh@gmail.com
+                    </a>
+
+                    <a class="cl" href="https://github.com/Rathod-Ankushhh"
+                    target="_blank" rel="noopener noreferrer">
+                        github.com/Rathod-Ankushhh
+                    </a>
+
+                    <a class="cl" href="https://linkedin.com/in/rathod-ankush-8506a431b/"
+                    target="_blank" rel="noopener noreferrer">
+                        linkedin.com/in/rathod-ankush-8506a431b
+                    </a>
+
+                    <!-- Formspree contact form -->
+                    <form class="fm"
+                        action="https://formspree.io/f/mzerrqkq"
+                        method="POST">
+
+                        <label for="n">Name</label>
+                        <input id="n" type="text" name="name"
+                            placeholder="Your name" required>
+
+                        <label for="e">Email</label>
+                        <input id="e" type="email" name="email"
+                            placeholder="you@company.com" required>
+
+                        <label for="s">Subject</label>
+                        <input id="s" type="text" name="subject"
+                            placeholder="Subject" required>
+
+                        <label for="m">Message</label>
+                        <textarea id="m" name="message" rows="2"
+                                placeholder="How can I help?" required></textarea>
+
+                        <button type="submit" class="btn">Send Message ↗</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================== TECHNOLOGY USED ==================== -->
+            <div class="lf" id="L4">
+
+                <!-- Tools and technologies behind the portfolio -->
+                <div class="fr pg">
+                    <div class="tag">08 / built with</div>
+                    <h2>Tech behind this site.</h2>
+
+                    <div class="it">
+                        <b>HTML5</b>
+                        <span>Semantic structure, one self-contained file</span>
+                    </div>
+
+                    <div class="it">
+                        <b>CSS3 3D transforms</b>
+                        <span>Perspective, rotateX / rotateY: the laptop and this book</span>
+                    </div>
+
+                    <div class="it">
+                        <b>Vanilla JavaScript</b>
+                        <span>Scroll-driven animation with requestAnimationFrame</span>
+                    </div>
+
+                    <div class="it">
+                        <b>Custom syntax highlighter</b>
+                        <span>Regex-based, powers the live code typing</span>
+                    </div>
+
+                    <div class="it">
+                        <b>Google Fonts</b>
+                        <span>Inter, Space Grotesk, JetBrains Mono</span>
+                    </div>
+
+                </div>
+
+                <!-- Back page of the portfolio book -->
+                <div class="bk pg">
+
+                </div>
+            </div>
         </div>
-      </div>
-    </section>
-  </main>
-<!-- Footer -->
-  <footer class="site-footer">
-    <div class="footer-copy">© 2025 Rathod Ankush. All rights reserved.</div>
-    <div class="footer-made">Designed with <b aria-label="love">♥</b> & <span aria-label="coffee">☕</span></div>
-    <a class="footer-top" href="#home">Back to Top <span aria-hidden="true">↑</span></a>
-  </footer>
-  <script src="script.js"></script>
+    </div>
+
+
+    <!-- ==================== SCROLL STORY CAPTION ==================== -->
+    <div id="cap">
+        <div class="tag" id="cn"></div>
+        <h3 id="ct"></h3>
+        <p id="cx"></p>
+        <span class="cm" id="cc"></span>
+    </div>
+
+
+    <!-- ==================== SCROLL HINT ==================== -->
+    <div class="hint" id="hint">↓ scroll</div>
+
+
+    <!-- ==================== NAVIGATION DOTS ==================== -->
+    <div id="dots"></div>
+
+
+    <!-- ==================== SCROLL PROGRESS HUD ==================== -->
+    <div id="hud">
+        <span>main ● ankush.dev</span>
+        <span id="hr">1/6 · open</span>
+    </div>
+
+
+    <!-- ==================== SCROLL SPACER ==================== -->
+    <div id="sp"></div>
+
+
+    <!-- Main JavaScript file -->
+    <script src="script.js"></script>
+
 </body>
 </html>
